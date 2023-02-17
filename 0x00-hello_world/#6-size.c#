@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+/**
+ *main -Determine the size of the data
+ *
+ *Return: 0 (success)
+ */
+int main(void)
+{
+  printf("size of a char:%lu bytes\n", sizeof(char))
+}
