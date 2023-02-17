@@ -7,5 +7,15 @@
  */
 int main(void)
 {
-  printf("size of a char:%lu bytes\n", sizeof(char))
+  printf("size of a char:%lu bytes\n", sizeof(char));
+  printf("size of a int:%ld bytes\n", si\
+   zeof(int));
+  printf("size of a char:%lu bytes\n", si\
+zeof(char));
+  printf("size of a char:%lu bytes\n", si\
+zeof(char));
+  printf("size of a char:%lu bytes\n", si\
+zeof(char));
+  
+  
 }
