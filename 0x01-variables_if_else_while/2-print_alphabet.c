@@ -2,17 +2,17 @@
 #include <ctype.h>
 
 /**
- *main -convert to lower case using the putchar
+ * main - print the letters in lower case
  *
  *Return: 0 (success)
  */
 int main(void)
 {
-char ck;
-for (ck = "A"; ck <= "Z"; ck++)
+int c;
+for (c = 'A'; c <= 'Z'; c++)
 {
-putchar(tolower(ck));
-putchar("");
+putchar(tolower(c));
 }
-return (0); 
+putchar('\n');
+return (0);
 }
