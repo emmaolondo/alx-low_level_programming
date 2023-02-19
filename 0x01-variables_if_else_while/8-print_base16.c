@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+/**
+ *main - Hexadeximals in small numbers
+ *
+ *Return: 0 (success)
+ */
+int main(void)
+{
+int k, l;
+for (k = '0'; k <= '9'; k++)
+{
+putchar(k);
+}
+for (l = 'A'; l <= 'F'; l++)
+{
+putchar(tolower(l));
+}
+putchar('\n');
+return (0);
+}
