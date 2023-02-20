@@ -8,15 +8,22 @@
  */
 int main(void)
 {
-int m, n;
+int m;
+int n;
 for (m = '0'; m <= '8'; m++)
+{
 for (n = '1'; n <= '9'; n++)
 {
-if (m != n)
+if (m != n && m < n)
 {
 putchar(m);
 putchar(n);
+if (m + n != 17)
+{
 putchar(',');
+putchar(' ');
+}
+}
 }
 }
 putchar('\n');
