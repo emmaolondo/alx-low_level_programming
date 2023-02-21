@@ -5,12 +5,12 @@
  *
  *Return: 0 (success)
  */
-print_alphabet(void)
+void print_alphabet(void)
 {
 int ch;
-for (ch = 'A'; ch <= 'Z'; ch++)
+for (ch = 'a'; ch <= 'z'; ch++)
 {
-_putchar(tolower(ch));
+_putchar(ch);
 _putchar('\n');
 }
 return (0);
