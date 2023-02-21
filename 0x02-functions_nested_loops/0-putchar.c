@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
  *_putchar - Display the charater in a function
@@ -6,8 +6,8 @@
  *
  *Return: 0 (success)
  */
-int _putchar(int ch)
+int _putchar(char ch)
 {
-putchar(ch);
+write(1,&ch, 1);
 return (0);
 }
