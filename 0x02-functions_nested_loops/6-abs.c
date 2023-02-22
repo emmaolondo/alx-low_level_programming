@@ -8,7 +8,7 @@
  */
 int _abs(int value)
 {
-int number = value * ((2*value + 1)%2);
+int number = value * ((2 * value + 1) % 2);
 _putchar(number);
 return (0);
 }
