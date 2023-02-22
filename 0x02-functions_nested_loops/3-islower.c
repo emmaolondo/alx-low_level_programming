@@ -3,6 +3,7 @@
 
 /**
  *_islower - checks if the character is in lowercase
+ *@c: integer operand
  *
  *Return: 1 (success)
  */
