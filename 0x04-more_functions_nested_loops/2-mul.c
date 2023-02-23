@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  *mul - find the product of two integers
@@ -10,6 +11,6 @@
 int mul(int a, int b)
 {
 int product = a * b;
-printf(product);
+ printf("%d", product);
 return (0);
 }
