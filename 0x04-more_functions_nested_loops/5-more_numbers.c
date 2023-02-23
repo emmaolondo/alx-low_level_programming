@@ -18,5 +18,5 @@ _putchar('\n');
 }
 row_count++;
 }
-return (0);
+_putchar('n');
 }
