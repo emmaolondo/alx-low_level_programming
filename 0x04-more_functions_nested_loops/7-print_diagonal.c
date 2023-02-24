@@ -16,7 +16,7 @@ _putchar('\n');
 }
 else
 {
-while (k <= n)
+while (k < n)
 {
 for (spacecount = 1; spacecount <= n; n++)
 {
