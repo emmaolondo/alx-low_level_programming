@@ -18,7 +18,7 @@ else
 {
 for (row = 0; row <= size; row++)
 {
-for (col = 0; col <= size; col)
+for (col = 0; col <= size; col++)
 {
 _putchar('#');
 }
