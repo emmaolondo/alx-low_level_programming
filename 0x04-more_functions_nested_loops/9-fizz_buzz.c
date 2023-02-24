@@ -23,10 +23,12 @@ else if (n % 5 == 0)
 {
 printf("%s%c", "Buzz", ' ');
 }
-else if (n < 100)
+else if (n == 100)
 {
-printf("%d%c", n, ' ');
+printf("%s", "Buzz");
 }
+else
+printf("%d%c", n, ' ');
 }
 printf("\n");
 return (0);
