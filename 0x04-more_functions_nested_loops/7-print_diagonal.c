@@ -22,7 +22,7 @@ for (spacecount = 1; spacecount <= n; n++)
 {
 _putchar(' ');
 }
-_putchar('\\');
+_putchar(92);
 _putchar('\n');
 k++;
 }
