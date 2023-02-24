@@ -9,23 +9,23 @@
 int main(void)
 {
 int n;
-char s = ' ';
 for (n = 1; n <= 100; n++)
 {
 if (n % 3 == 0)
 {
-printf("%s %c", "Fizz", s);
+printf("%s", "Fizz");
 }
 else if (n % 5 == 0)
 {
-printf("%s %c", "Buzz", s);
+printf("%s", "Buz");
 }
 else if (n % 5 == 0 && n % 3 == 0)
 {
-printf("%s %c", "FizzBuzz", s);
+printf("%s", "FizzBuzz");
 }
 else
-printf("%d %c", n, s);
+printf("%d", n);
 }
+printf("\n");
 return (0);
 }
