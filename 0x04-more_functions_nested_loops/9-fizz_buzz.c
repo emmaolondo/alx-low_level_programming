@@ -11,20 +11,22 @@ int main(void)
 int n;
 for (n = 1; n <= 100; n++)
 {
-if (n % 3 == 0)
+if (n % 3 == 0 && n % 5 == 0)
 {
-printf("%s %c", "Fizz", ' ');
+printf("%s%c", "FizzBuzz", ' ');
+}
+else if (n % 3 == 0)
+{
+printf("%s%c", "Fizz", ' ');
 }
 else if (n % 5 == 0)
 {
-printf("%s %c", "Buzz", ' ');
+printf("%s%c", "Buzz", ' ');
 }
-else if (n % 3 == 0 && n % 5 == 0)
+else if (n < 100)
 {
-printf("%s %c", "FizzBuzz", ' ');
+printf("%d%c", n, ' ');
 }
-else
-printf("%d %c", n, ' ');
 }
 printf("\n");
 return (0);
