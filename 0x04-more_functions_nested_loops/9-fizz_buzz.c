@@ -13,18 +13,18 @@ for (n = 1; n <= 100; n++)
 {
 if (n % 3 == 0)
 {
-printf("%s", "Fizz");
+printf("%s %c", "Fizz", ' ');
 }
 else if (n % 5 == 0)
 {
-printf("%s", "Buz");
+printf("%s %c", "Buzz", ' ');
 }
 else if (n % 5 == 0 && n % 3 == 0)
 {
-printf("%s", "FizzBuzz");
+printf("%s %c", "FizzBuzz", ' ');
 }
 else
-printf("%d", n);
+printf("%d %c", n, ' ');
 }
 printf("\n");
 return (0);
