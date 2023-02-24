@@ -9,22 +9,27 @@
 void print_diagonal(int n)
 {
 int spacecount;
-int k = 0;
+int k;
 if (n <= 0)
 {
 _putchar('\n');
 }
 else
 {
-while (k < n)
+for (k = 0; k < n; k++)
 {
 for (spacecount = 1; spacecount <= n; n++)
 {
+if (spacecount < k)
+{
 _putchar(' ');
 }
+else
+{
 _putchar('\\');
+}
+}
 _putchar('\n');
-k++;
 }
 }
 }
