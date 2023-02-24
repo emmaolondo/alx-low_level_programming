@@ -13,10 +13,14 @@ while (row_count < 10)
 {
 for (n = 0; n <= 14; n++)
 {
-_putchar(n);
+if (n > 9)
+{
+n = n % 10;
+_putchar((n + '0'));
+}
+ _putchar(n);
 _putchar('\n');
 }
 row_count++;
 }
-_putchar('n');
 }
