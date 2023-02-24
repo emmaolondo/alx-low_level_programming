@@ -13,22 +13,20 @@ for (n = 1; n <= 100; n++)
 {
 if (n % 3 == 0 && n % 5 == 0)
 {
-printf("%s", " FizzBuz");
+printf("FizzBuz");
 }
 else if (n % 3 == 0)
 {
-printf("%s", " Fizz");
+printf("Fizz");
 }
 else if (n % 5 == 0)
 {
-printf("%s", " Buzz");
-}
-else if (n == 1)
-{
-printf("%d", n);
+printf("Buz");
 }
 else
-printf(" %d", n);
+printf("%d", n);
+if (n != 100)
+printf(" ");
 }
 printf("\n");
 return (0);
