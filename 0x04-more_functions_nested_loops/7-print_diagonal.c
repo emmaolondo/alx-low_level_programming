@@ -18,7 +18,6 @@ else
 for (spacecount = 1; spacecount <= n; n++)
 {
 _putchar(' ');
-}
 _putchar('\\');
 _putchar('\n');
 }
