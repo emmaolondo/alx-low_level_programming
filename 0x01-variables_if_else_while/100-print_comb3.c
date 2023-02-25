@@ -19,7 +19,7 @@ if (m != n && m < n)
 {
 putchar(m);
 putchar(n);
-if (m != '8' ||(m == '8' && n != '9'))
+if (m != '8' || (m == '8' && n != '9'))
 {
 putchar(',');
 putchar(' ');
