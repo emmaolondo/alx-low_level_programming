@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -18,7 +19,7 @@ if (m != n && m < n)
 {
 putchar(m);
 putchar(n);
-if (m + n != 17)
+if (m != '8' ||(m == '8' && n != '9'))
 {
 putchar(',');
 putchar(' ');
