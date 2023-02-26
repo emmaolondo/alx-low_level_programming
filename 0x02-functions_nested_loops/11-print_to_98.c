@@ -19,7 +19,7 @@ else
 {
 while (n > 98)
 {
-printf("%d, ", --n);
+printf("%d, ", n--);
 printf("%d", n);
 }
 }
