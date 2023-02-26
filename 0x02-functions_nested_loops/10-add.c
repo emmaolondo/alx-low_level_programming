@@ -3,9 +3,9 @@
 /**
  *add - finds the sum of two numbers
  *@n: the first number to be added
- *@: the second number to be added
+ *@m: the second number to be added
  *
- *Return: 0 
+ *Return: 0
  */
 int add(int n, int m)
 {
