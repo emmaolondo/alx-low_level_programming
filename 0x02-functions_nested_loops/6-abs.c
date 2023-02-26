@@ -8,7 +8,10 @@
  */
 int _abs(int value)
 {
-int number = value * ((2 * value + 1) % 2);
-_putchar(number);
-return (0);
+if (n < 0)
+{
+return (-n);
+}
+else
+return (n);
 }
