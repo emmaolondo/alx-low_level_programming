@@ -8,25 +8,18 @@
  */
 void print_rev(char *s)
 {
-int str_length, i;
-char *start, *end, tmp;
-str_length = 0; /* get the length of string*/
-while(s[i++])
+int str_length = 0;
+while (str_length >= 0)
 {
-str_length++;
-}
-start = s; /* beginning of string*/
-end = s; /* end of sting = start*/
-for (i = 0; i < str_length - 1; i++)
+if (s[str_length] == '\0')
 {
-end++; /* move end pointer to the last string*/
+break;
 }
-for (i = 0; i < str_length / 2; i++)
+str_length++; 
+}
+for (str_length--; str_length >= 0; str_length--)
 {
-tmp = *start;
-*start = *end;
-*end = tmp;
-start++;
-end--;
+_puchar(s[str_length]);
 }
+_putchar('\n');
 }
