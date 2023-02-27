@@ -15,7 +15,7 @@ if (s[str_length] == '\0')
 {
 break;
 }
-str_length++; 
+str_length++;
 }
 for (str_length--; str_length >= 0; str_length--)
 {
