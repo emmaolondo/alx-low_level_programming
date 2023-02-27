@@ -11,7 +11,7 @@ void print_rev(char *s)
 int str_length, i;
 char *start, *end, tmp;
 str_length = 0; /* get the length of string*/
-while(s[i++)
+while(s[i++])
 {
 str_length++;
 }
