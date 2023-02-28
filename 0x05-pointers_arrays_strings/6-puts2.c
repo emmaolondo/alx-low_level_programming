@@ -11,10 +11,9 @@ void puts2(char *str)
 int str_length, i;
 str_length = 0;
 i = 0;
-char *y = str;
-while (*y != '\0')
+while (str != '\0')
 {
-y++;
+str++;
 str_length++;
 }
 for (i = 0; i <= str_length - 1; i++)
