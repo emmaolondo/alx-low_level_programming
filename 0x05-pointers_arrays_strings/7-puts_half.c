@@ -24,7 +24,7 @@ else
 {
 n = len / 2;
 }
-for (; n < r; d++)
+for (; d < n; d++)
 {
 _putchar(str[n]);
 }
