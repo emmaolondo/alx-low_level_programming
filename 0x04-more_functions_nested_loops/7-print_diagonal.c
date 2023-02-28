@@ -18,18 +18,12 @@ else
 {
 for (k = 0; k < n; k++)
 {
-for (spacecount = 1; spacecount <= n; n++)
-{
-if (spacecount < k)
+for (spacecount = 1; spacecount <= n; spacecount++)
 {
 _putchar(' ');
 }
-else
-{
 _putchar('\\');
 }
-}
 _putchar('\n');
-}
 }
 }
