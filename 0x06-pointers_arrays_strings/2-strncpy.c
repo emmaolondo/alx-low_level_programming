@@ -13,18 +13,11 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i;
-/* String count*/
-while (n != 0)
-{
-n++;
-}
-for (i = 0; i < n ; i++)
-{
-if (src[i] != '\0')
+int i = 0; /* used to countelements in the array pointer*/
+while (i < n && src[i] != '\0')
 {
 dest[i] = src[i];
-}
+i++;
 }
 while (i < n)
 {
