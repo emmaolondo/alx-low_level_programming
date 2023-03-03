@@ -1,0 +1,12 @@
+#include "main.h"
+
+/**
+ *rot13 -function that cyphers letters by rotating by 13
+ *@str: string pointer
+ *
+ *Return: encrypted string
+ */
+char *rot13(char *)
+{
+
+}
