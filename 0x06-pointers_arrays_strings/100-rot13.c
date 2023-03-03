@@ -6,11 +6,11 @@
  *
  *Return: encrypted string
  */
-char *rot13(char *)
+char *rot13(char *str)
 {
 int i, k;
-char letter[] = "abcdefghijklmnopqrstuvwxyz";
-char replace[] = "nopqrstuvwxyzabcdefgijklm";
+char letter[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char replace[] = "nopqrstuvwxyzabcdefgijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 for (i = 0; str[i + 0]; i++)
 {
 for (k = 0; k <= 52; k++)
