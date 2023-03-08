@@ -33,11 +33,11 @@ if (s[i] == accept[j])
 n++;
 break;
 }
-else if (accept[i + 1] == '\0')
+else
 {
 break;
 }
 }
 }
-return n;
+return (n);
 }
