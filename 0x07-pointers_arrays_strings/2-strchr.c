@@ -23,5 +23,5 @@ if (s[i] == c)
 return (s + i);/* points the string from the character*/
 }
 }
-return NULL;
+return (0);
 }
