@@ -8,7 +8,6 @@
  */
 void _puts_recursion(char *s)
 {
-int i; /* used for string count*/
 if (*s)
 {
 _putchar(*s);
