@@ -6,7 +6,7 @@
  *@b: integer variable
  *
  *
- *return: integer
+ *Return: integer
  */
 int primenumber(int a, int b)
 {
@@ -25,7 +25,7 @@ return (primenumber(a, b + 1));
  *is_prime_number - checks if a number is a prime number
  *@n: integer value
  *
- *Returm:: 0
+ *Return: 0
  */
 int is_prime_number(int n)
 {
