@@ -18,7 +18,7 @@ if (!(a % b))
 {
 return (0);
 }
-return (primenumber(a, b + 1)); 
+return (primenumber(a, b + 1));
 }
 
 /**
