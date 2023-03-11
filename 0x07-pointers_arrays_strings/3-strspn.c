@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- *_strspn - function that gets the length of a prefix substring
- *@s: start pointer
- *@accept: substring to be tested
+ * _strspn - function that gets the length of a prefix substring
+ * @s: string source pointer
+ * @accept: substring pointer
  *
  *
- *Return: n
+ *Return: byte count
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int n = 0; /* used for bytes count*/
-unsigned int i, j;
-unsigned int p = 0; /* used for string count*/
+unsigned int n = 0; /* used to count the bytes*/
 unsigned int b = 0;
+unsigned int p = 0;
+unsigned int i, j;
+/* length of the string*/
 while (*s != '\0')
 {
 p++;
@@ -37,7 +38,7 @@ else
 {
 break;
 }
-}
+}		
 }
 return (n);
 }
