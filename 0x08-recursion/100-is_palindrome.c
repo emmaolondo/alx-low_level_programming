@@ -35,9 +35,12 @@ if (l >= end)
 {
 return (1);
 }
+if ((s[l++]) == (s[end--]))
+{
+return (is_palindrome(s));
+}
 if ((s[l++]) != (s[end--]))
 {
 return (0);
 }
-return (is_palindrome(s));
 }
