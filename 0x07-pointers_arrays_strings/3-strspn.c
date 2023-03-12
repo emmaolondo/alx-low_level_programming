@@ -11,34 +11,23 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int n = 0; /* used to count the bytes*/
-unsigned int b = 0;
-unsigned int p = 0;
-unsigned int i, j;
+unsigned int j;
 /* length of the string*/
 while (*s != '\0')
 {
-p++;
-s++;
-}
-while (*accept != '\0')
+for (j = 0; accept[j]; j++)
 {
-b++;
-accept++;
-}
-for (i = 0; i < p; i++)
-{
-for (j = 0; j < b; j++)
-{
-if (s[i] == accept[j])
+if (*s == accept[j])
 {
 n++;
 break;
 }
-else
+else if (accept[j + 1] == '\0')
 {
-break;
+return (n);
 }
 }
+s++;
 }
 return (n);
 }
