@@ -2,9 +2,12 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
- * strdup -  function that returns a pointer to a newly allocated space in memory,
+ * strdup -  function that returns a
+ * pointer to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter
  * @str: string pointer
+ *
+ *
  *
  * Return: string
  */
@@ -21,7 +24,7 @@ while (str[n] != '\0')/* get the string length*/
 {
 n++;
 }
-ptr = (char *) malloc(n * sizeof(str));/* allocate memory for ptr*/
+ptr = (char *) malloc((n + 1) * sizeof(str));/* allocate memory for ptr*/
 if (ptr == NULL)
 {
 return (NULL);
