@@ -19,21 +19,21 @@ if (width <= 0 ||  height  <= 0)
 {
 return (NULL);
 }
-array_grid = malloc(sizeof(int *) * height * width);
+array_grid = malloc(sizeof(int *) * height);
 if (array_grid == NULL)
 {
 return (NULL);
 }
 for (row = 0; row < height; row++)
 {
-array_grid[row] = malloc(sizeof(int) * height);
+array_grid[row] = malloc(sizeof(int) * width);
 if (array_grid[row] == NULL)
 {
 col = 0;
 while (col < row)
 {
 free(array_grid[col]);
-/* col++;*/
+col++;
 }
 free(array_grid);
 return (NULL);
