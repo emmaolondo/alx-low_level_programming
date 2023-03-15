@@ -33,10 +33,10 @@ col = 0;
 while (col < row)
 {
 free(array_grid[col]);
-col++;
+/* col++;*/
 }
 free(array_grid);
-return NULL;
+return (NULL);
 }
 for (col = 0; col < width; col++)
 {
