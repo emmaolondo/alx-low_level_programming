@@ -27,6 +27,17 @@ return (NULL);
 for (row = 0; row < height; row++)
 {
 array_grid[row] = malloc(sizeof(int) * height);
+if (array_grid[row] == NULL)
+{
+col = 0;
+while (col < row)
+{
+free(array_grid[col]);
+col++;
+}
+free(array_grid);
+return NULL;
+}
 for (col = 0; col < width; col++)
 {
 array_grid[row][col] = 0;
