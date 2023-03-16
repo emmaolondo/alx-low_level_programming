@@ -4,7 +4,7 @@
 
 /**
  * str_concat - function that concatenates two strings
- * @s1: string pointer 
+ * @s1: string pointer
  * @s2: string pointer
  *
  *
@@ -27,12 +27,12 @@ if (s2 == NULL)
 s2 = "";
 }
 /* get length of s2*/
-while(s2[i] != '\0')
+while (s2[i] != '\0')
 {
 i++;
 }
 /* allocate memory to ptr*/
-ptr =(char *) malloc(sizeof(char) * i);
+ptr = (char *) malloc(sizeof(char *) * i);
 if (ptr == NULL)
 {
 return (NULL);
@@ -51,5 +51,5 @@ p++;
 k++;
 }
 /* ptr[i] = '\0'; */
-return(ptr);
+return (ptr);
 }
