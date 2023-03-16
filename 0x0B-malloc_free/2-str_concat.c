@@ -34,7 +34,7 @@ i++;
 l++;
 }
 /* allocate memory to ptr*/
-ptr = (char *) malloc(sizeof(char ) * (i + l));
+ptr = (char *) malloc(sizeof(char ) * (i + l) + 2);
 if (ptr == NULL)
 {
 return (NULL);
