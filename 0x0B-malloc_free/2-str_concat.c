@@ -18,9 +18,13 @@ int j = 0;
 int k = 0;
 int p = 0;
 /* check if string is empty*/
-if (s1 == NULL || s2 == NULL)
+if (s1 == NULL)
 {
-return (NULL);
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
 }
 /* get length of s2*/
 while(s2[i] != '\0')
@@ -28,7 +32,7 @@ while(s2[i] != '\0')
 i++;
 }
 /* allocate memory to ptr*/
-ptr = malloc(sizeof(char *) * i);
+ptr =(char *) malloc(sizeof(char) * i);
 if (ptr == NULL)
 {
 return (NULL);
