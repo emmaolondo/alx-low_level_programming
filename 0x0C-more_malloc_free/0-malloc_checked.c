@@ -6,7 +6,7 @@
  * malloc_checked - a function that allocates memory using malloc
  * @b: integer
  *
- * Return ptr
+ * Return: ptr
  */
 void *malloc_checked(unsigned int b)
 {
