@@ -35,7 +35,7 @@ if ( n >= b)
 {
 n = b;
 }
-ptr = (char *) malloc(sizeof(char) * (a + b)+2);
+ptr = (char *) malloc(sizeof(char) * (a + n)+2);
 if (ptr == NULL)
 {
 return (NULL);
