@@ -13,16 +13,15 @@
 int *array_range(int min, int max)
 {
 int *ptr;
-int i = 0;
+int i;
 int len = 0;
 if (min > max)
 {
 return (NULL);
 }
 /* get length of array*/
-while (min <= max)
+for (i = min; i <= max; i++)
 {
-min++;
 len++;
 }
 /* allocate memory to ptr */
@@ -32,6 +31,7 @@ if (ptr == NULL)
 return (NULL);
 }
 /* loop through the array to fill the ptr*/
+i = 0;
 while (min <= max)
 {
 ptr[i] = min;

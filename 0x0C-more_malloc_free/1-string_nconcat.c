@@ -26,9 +26,12 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-while (s1[a] != '\0' && s2[b] != '\0')
+while (s1[a] != '\0')
 {
 a++;
+}
+while (s2[b] != '\0')
+{
 b++;
 }
 if ( n >= b)
@@ -46,7 +49,7 @@ ptr[f] = s1[c];
 c++;
 f++;
 }
-while (s2[d] != '\0')
+while (s2[d] != '\0' && d < n)
 {
 ptr[f] = s2[d];
 f++;
