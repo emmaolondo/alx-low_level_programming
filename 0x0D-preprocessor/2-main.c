@@ -3,7 +3,8 @@
 /**
  *main - program that prints the origin of a file
  *
- *return: 0 (success)
+ *
+ *Return: 0 (success)
  */
 int main(void)
 {
