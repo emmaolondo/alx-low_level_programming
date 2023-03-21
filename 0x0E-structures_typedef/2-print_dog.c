@@ -5,7 +5,7 @@
  *print_dog - function that prints a struct dog
  *@d: dog structure
  *
- *Return: dog
+ *Return: string
  */
 void print_dog(struct dog *d)
 {
@@ -23,13 +23,12 @@ else
 {
 printf("Name: %s\n", d->name);
 }
+printf("Age: %.6f\n", d->age);
 if (d->owner == NULL)
-{
 printf("Owner: nill\n");
-}
-else{
+else
+{
 printf("Owner: %s\n", d->owner);
 }
-printf("Age: %.6f\n", d->age);
 }
 }
