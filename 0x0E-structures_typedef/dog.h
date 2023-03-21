@@ -3,9 +3,9 @@
 
 struct dog
 {
-  char *name;
-  float age;
-  char *owner;
+char *name;
+float age;
+char *owner;
 };
 /* use the typedef to define a new dog*/
 typedef struct dog dog_t;
