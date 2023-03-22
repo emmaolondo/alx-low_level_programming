@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "function_pointers.h"
 
 /**
  *_putchar - implementation of the putchar function in c
