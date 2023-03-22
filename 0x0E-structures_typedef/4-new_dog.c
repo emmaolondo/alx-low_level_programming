@@ -1,5 +1,26 @@
 #include "dog.h"
 #include <stdlib.h>
+
+/**
+ *str_cpy - a function that copies one string to another
+ *@src: source string
+ *@dest: destination string
+ *
+ *
+ *Return: dest
+ */
+char *str_cpy(char *dest, char *src)
+{
+int i;
+i = 0;
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+return (dest);
+}
 /**
  *new_dog - function that creates a new dog
  *@name: name variable
@@ -12,7 +33,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int i, j, n, o;
+int n, o;
 dog_t *newdog;
 n =  o = 0;
 if (name == NULL || owner == NULL)
@@ -38,10 +59,7 @@ free(newdog->name);
 free(newdog);
 return (NULL);
 }
-for (i = 0; i <= n; i++)
-{
-newdog->name[i] = name[i];
-}
+newdog->name = str_cpy(newdog->name, name);
 newdog->age = age;
 if (newdog->owner == NULL)
 {
@@ -49,9 +67,6 @@ free(newdog->owner);
 free(newdog);
 return (NULL);
 }
-for (j = 0; j <= (o + 3); j++)
-{
-newdog->owner[j] = owner[j];
-}
+newdog->owner = str_cpy(newdog->owner, owner);
 return (newdog);
 }
