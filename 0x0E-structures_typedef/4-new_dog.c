@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 int i, j, n, o;
 dog_t *newdog;
-n = j = o = 0;
+n =  o = 0;
 if (name == NULL || owner == NULL)
 {
 return (NULL);
@@ -40,7 +40,7 @@ for (i = 0; i <= n; i++)
 newdog->name[i] = name[i];
 }
 newdog->age = age;
-for (; j < o; j++)
+for (j = 0; j <= o; j++)
 {
 newdog->owner[j] = owner[j];
 }
