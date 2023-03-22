@@ -40,7 +40,7 @@ for (i = 0; i <= n; i++)
 newdog->name[i] = name[i];
 }
 newdog->age = age;
-for (j = 0; j <= o; j++)
+for (j = 0; j <= (o + 3); j++)
 {
 newdog->owner[j] = owner[j];
 }
