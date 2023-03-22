@@ -22,7 +22,7 @@ return (NULL);
 newdog = malloc(sizeof(dog_t));
 if (newdog == NULL)
 {
-free(newdog)
+free(newdog);
 return (NULL);
 }
 while (name[n] != '\0' && owner[o] != '\0')
@@ -34,8 +34,8 @@ newdog->name = malloc(sizeof(char) * n);
 newdog->owner = malloc(sizeof(char) * o);
 if (newdog->name == NULL)
 {
-free(newdog->name)
-free(newdog)
+free(newdog->name);
+free(newdog);
 return (NULL);
 }
 for (i = 0; i <= n; i++)
@@ -45,8 +45,8 @@ newdog->name[i] = name[i];
 newdog->age = age;
 if (newdog->owner == NULL)
 {
-free(newdog->owner)
-free(newdog)
+free(newdog->owner);
+free(newdog);
 return (NULL);
 }
 for (j = 0; j <= (o + 3); j++)
