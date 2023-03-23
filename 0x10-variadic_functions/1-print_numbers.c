@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *print_numbers - function that prints numbers,
+ *print_numbers - function that prints numbers
  *followed by a new line.
  *@separator: string to be printed between numbers
  *@n: the number of integers passed to the function
@@ -19,7 +19,7 @@ va_start(list, n);
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(list, int));
-if (i < (n -1) && separator != NULL)
+if ((i < (n -1)) && (separator != NULL))
 {
 printf("%s", separator);
 }
