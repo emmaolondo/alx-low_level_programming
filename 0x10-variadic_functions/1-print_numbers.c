@@ -7,6 +7,8 @@
  *followed by a new line.
  *@separator: string to be printed between numbers
  *@n: the number of integers passed to the function
+ *@...: the ellipsis
+ *
  *
  *
  *Return: numbers

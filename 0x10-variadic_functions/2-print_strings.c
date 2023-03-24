@@ -6,6 +6,8 @@
  *print_strings - function that print strings
  *@separator:  the string to be printed between the strings
  *@n: number of strings passed
+ *@...: the ellipsis
+ *
  *
  *
  *Return: string
@@ -15,10 +17,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 unsigned int i;
 va_list list;
 char *str;
-if (separator == NULL)
+/*if (separator == NULL)
 {
-separator = "";
-}
+separator = " ";
+}*/
 va_start(list, n);
 for (i = 0; i < n; i++)
 {
@@ -27,8 +29,11 @@ if (str == NULL)
 {
 printf("(nil)");
 }
+else
+{
 printf("%s" , str);
-if ((i < (n - 1)) && separator != NULL)
+}
+if ((i < (n - 1)) && separator)
 {
 printf("%s", separator);
 }
