@@ -26,7 +26,7 @@ case 'i':
 printf("%s%d", separator, (va_arg(list, int)));
 break;
 case 'f':
-printf("%s%.2f", separator, (va_arg(list, double)));
+printf("%s%f", separator, (va_arg(list, double)));
 break;
 case 's':
 str = va_arg(list, char *);
