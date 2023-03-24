@@ -10,7 +10,7 @@
  */
 void print_all(const char * const format, ...)
 {
-unsigned  int i;
+unsigned int i;
 char *str, *separator = "";
 va_list list;
 va_start(list, format);
@@ -36,7 +36,7 @@ str = "(nil)";
 }
 printf("%s%s", separator, str);
 break;
-default;
+default:
 i++;
 continue;
 }
