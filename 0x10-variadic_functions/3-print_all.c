@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- *print_all: print value of any datatype
+ *print_all -  print value of any datatype
  *@format: arguments
  *
  *Return: void
