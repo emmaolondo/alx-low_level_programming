@@ -19,11 +19,11 @@ if (array && size > 0 && cmp)
 while (i < size)
 {
 val = cmp(array[i]);
-i++;
 if (val)
 {
 break;
 }
+i++; 
 }
 return (i);
 }
