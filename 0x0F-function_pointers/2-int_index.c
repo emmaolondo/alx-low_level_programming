@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 
 /**
  *int_index - a function that searches an imteger
