@@ -1,7 +1,4 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdarg.h>
-
 /**
  *print_all -  print value of any datatype
  *@format: arguments
@@ -15,7 +12,9 @@ char *str, *separator = "";
 va_list list;
 va_start(list, format);
 i  = 0;
-while(format[i])
+if (format)
+{
+while (format[i])
 {
 switch (format[i])
 {
@@ -42,6 +41,7 @@ continue;
 }
 separator = ", ";
 i++;
+}
 }
 printf("\n");
 va_end(list);
