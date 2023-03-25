@@ -2,7 +2,6 @@
 #define FUN_POINTER
 
 #define size_t unsigned long
-#include <stdlib.h>
 
 int _putchar(char ch);
 void print_name(char *name, void (*f)(char *));
