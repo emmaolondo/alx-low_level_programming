@@ -23,7 +23,7 @@ if (val)
 {
 break;
 }
-i++; 
+i++;
 }
 if (i < size)
 {
