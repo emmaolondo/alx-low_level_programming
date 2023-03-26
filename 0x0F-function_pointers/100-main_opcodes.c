@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *opcode - peints rhe opcodes of ots main function
+ *opcode - points the opcodes of main function
  *@fun: a pointer to a function
  *@byte: number of bytes to be printed
  *
@@ -22,7 +22,6 @@ printf(" ");
 }
 printf("\n");
 }
-
 /**
  *main - Main function
  *@argc: argument count
@@ -37,13 +36,13 @@ int num;
 if (argc != 2)
 {
 printf("Error\n");
-exit(1);
+exit (1);
 }
 num = atoi(argv[1]);
 if (num < 0)
 {
 printf("Error\n");
-exit(2);
+exit (2);
 }
 opcode((char *)&main, num);
 return (0);
