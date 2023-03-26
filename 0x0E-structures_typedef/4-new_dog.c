@@ -40,7 +40,7 @@ if (name == NULL || owner == NULL)
 {
 return (NULL);
 }
-newdog = malloc(sizeof(dog_t));
+newdog = malloc(sizeof(*dog_t));
 if (newdog == NULL)
 {
 free(newdog);
