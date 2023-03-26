@@ -12,7 +12,7 @@
 void opcode(char *fun, int byte)
 {
 int i;
-for (i = 0; i < byte ; i++)
+for (i = 0; i < byte; i++)
 {
 printf("%.2hhx", fun[i]);
 if (i < (byte -1))
