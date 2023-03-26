@@ -45,6 +45,6 @@ if (num < 0)
 printf("Error\n");
 exit(2);
 }
-opcode((char *)&main ,num);
+opcode((char *)&main, num);
 return (0);
 }
