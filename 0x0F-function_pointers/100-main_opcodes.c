@@ -14,7 +14,7 @@ void opcode(char *fun, int byte)
 int i;
 for (i = 0; i < byte ; i++)
 {
-printf("%2x", fun[i]);
+printf("%.2x", fun[i]);
 if (i < (byte -1))
 {
 printf(" ");
