@@ -15,7 +15,7 @@ int i;
 for (i = 0; i < byte; i++)
 {
 printf("%.2hhx", fun[i]);
-if (i < (byte -1))
+if (i < (byte - 1))
 {
 printf(" ");
 }
@@ -36,13 +36,13 @@ int num;
 if (argc != 2)
 {
 printf("Error\n");
-exit (1);
+exit(1);
 }
 num = atoi(argv[1]);
 if (num < 0)
 {
 printf("Error\n");
-exit (2);
+exit(2);
 }
 opcode((char *)&main, num);
 return (0);
