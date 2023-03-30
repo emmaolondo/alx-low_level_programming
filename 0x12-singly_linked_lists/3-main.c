@@ -38,9 +38,9 @@ int main(void)
     add_node_end(&head, "Samantha");
     add_node_end(&head, "Stuart");
     add_node_end(&head, "Swati");
-    add_node_end(&head, "Timothy");
-    add_node_end(&head, "Victor");
-    add_node_end(&head, "Walton");
+    add_node_end(&head, NULL);
+    add_node_end(&head, NULL);
+    add_node_end(&head, NULL);
     print_list(head);
     return (0);
 }
