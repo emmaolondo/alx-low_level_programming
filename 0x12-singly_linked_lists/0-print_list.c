@@ -6,7 +6,6 @@
  * @h: list_t
  *
  * Return: Number of nodes
-
  */
 size_t print_list(const list_t *h)
 {
@@ -21,5 +20,5 @@ else
 i++;
 h = h->next;
 }
-return(i);
+return (i);
 }
