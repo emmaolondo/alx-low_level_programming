@@ -4,7 +4,7 @@
 
 /**
  * str_len - gets the length of string
- * str: string
+ * @str: string
  *
  * Return: string count
  */
@@ -30,6 +30,7 @@ return (i);
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *ptr, *temp;
+
 	if (str == NULL)
 		return (NULL);
 	temp = malloc(sizeof(list_t));
@@ -39,14 +40,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	temp->str = strdup(str);
 	if (temp->str == NULL)
 	{
-		return (NULL);
+		free(temp);
+		return (temp);
 	}
 	temp->len = str_len(temp->str);
 	temp->next = NULL;
 	if (*head == NULL)
 	{
 		*head = temp;
-		return (NULL);
+		return (temp);
 	}
 	else
 	{
