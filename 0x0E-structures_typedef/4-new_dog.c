@@ -36,12 +36,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 int n, o;
 dog_t *newdog;
 n =  o = 0;
-if (name == NULL || owner == NULL)
-{
-return (NULL);
-}
-newdog = malloc(sizeof(*dog_t));
-if (newdog == NULL)
+newdog = malloc(sizeof(*newdog));
+if (newdog == NULL || name == NULL || owner == NULL)
 {
 free(newdog);
 return (NULL);
