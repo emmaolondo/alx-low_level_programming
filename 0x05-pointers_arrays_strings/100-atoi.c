@@ -9,25 +9,32 @@
 
 int _atoi(char *s)
 {
-unsigned int i;
+unsigned int val;
+int i;
 int n = 1;/* show the sign of value*/
-while (*s == ' ')
+i = 0;
+val = 0;
+if (s[i] == '-')
 {
-++s;
+	n = -1;
+	i++;
 }
-if (*s == '-')
+if (s[i] == '+')
 {
-++s;
-n = -1;/* change the sign to negative*/
+	n *= 1;
+	i++;
 }
-else if (*s == '+')
+while (s[i] == ' ')
 {
-++s;
-;
+	i++;
 }
-while (*s >= '0' && *s <= '9')
+while (s[i] != '\0')
 {
-i = (i * 10) + (*s++ - '0');
+	if (s[i] >= '0' && s[i] <= '9')
+	{
+		val = val * 10 + (s[i] - '0');
+	}
+       i++;
 }
-return (i * n);
+return (n * val);
 }
