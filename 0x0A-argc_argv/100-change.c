@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 {
 	int cents, change, i;
 	int coin[5] = {25, 10, 5, 2, 1};
+
 	change = 0;
 
 	if (argc == 1)
@@ -27,14 +28,14 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 		return (0);
 	}
-	for(i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)
 	{
-		if(cents % coin[i] >= 0)
+		if (cents % coin[i] >= 0)
 		{
 			change += cents / coin[i];
 			cents = cents % coin[i];
 		}
 	}
 	printf("%d\n", change);
-  return (0);
+	return (0);
 }
