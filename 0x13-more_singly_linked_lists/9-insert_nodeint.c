@@ -1,20 +1,15 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *prt, *ptr2;
+	listint_t *ptr, *ptr2;
 
-	unsigned int len = 0;
-	ptr2 = (struct listint_s *)malloc(sizeof(listint_t));
 	ptr = *head;
+	ptr2 = (struct listint_s *)malloc(sizeof(listint_t));
 
-	while (ptr)
-        {
-                len++;
-                ptr = ptr->next;
-        }
 	if (ptr2 == NULL)
 	{
 		return (NULL);
@@ -22,27 +17,21 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	ptr2->n = n;
 	ptr2->next = NULL;
 
-	if (*head == NULL)
+	if (ptr == NULL)
 	{
-		*head = ptr2;
+		ptr = ptr2;
 		return (ptr2);
 	}
 	else
 	{
 		idx--;
-		if (idx < 0 && idx > len)
-			return (NULL);
-		else
+		while (idx != 1)
 		{
+			ptr = ptr->next;
 			idx--;
-			while (idx != 1)
-			{
-				ptr = ptr->next;
-				idx--;
-			}
+		}
 			ptr2->next = ptr->next;
 			ptr->next = ptr2;
-		}
 	}
 	return (ptr2);
 }
