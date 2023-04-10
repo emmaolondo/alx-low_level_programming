@@ -13,9 +13,7 @@ void print_binary(unsigned long int n)
 	lastbit = 0;
 
 	if (n > 1)
-	{
-	       print_binary(n >> 1);/* shift left by 1 recursively*/
-	}
+		print_binary(n >> 1);/* shift left by 1 recursively*/
 	lastbit = n & 1;/* bitwise AND to get the lastbit*/
 	_putchar((lastbit) + '0');
 }
