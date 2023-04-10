@@ -12,7 +12,8 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int flip_counts;
-	int val = n ^ m;
+	/* get the XOR of the bumbers*/
+	unsigned long int val = n ^ m;
 
 	flip_counts = 0;
 
