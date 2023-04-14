@@ -1,6 +1,11 @@
 #include "main.h"
 
 /**
+ * main - unction that copies one file to another
+ * @argc: argument count
+ * @argv: argument ventor
+ *
+ * Return: 0 success or exit
  */
 int main(int argc, char **argv)
 {
@@ -22,7 +27,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd_copy = open(file_to, O_CREAT | O_RDWR | O_TRUNC | O_APPEND, 0664);
+	fd_copy = open(file_to, O_CREAT | O_RDONLY | O_TRUNC | O_APPEND, 0664);
 
 	if (fd_copy == -1)
 	{
