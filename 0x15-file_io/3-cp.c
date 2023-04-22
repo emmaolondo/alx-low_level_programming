@@ -1,5 +1,7 @@
 #include "main.h"
 
+void _close(int fd, int fd_copy);
+
 /**
  * main - unction that copies one file to another
  * @argc: argument count
@@ -27,7 +29,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd_copy = open(file_to, O_CREAT | O_RDONLY | O_TRUNC | O_APPEND, 0664);
+	fd_copy = open(file_to, O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 
 	if (fd_copy == -1)
 	{
@@ -38,8 +40,8 @@ int main(int argc, char **argv)
 	wfile = write(fd_copy, buffer, rfile);
 	if (wfile != rfile)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %d\n", fd_copy);
-		exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+		exit(99);
 	}
 	if (close(fd) == -1)
 	{
