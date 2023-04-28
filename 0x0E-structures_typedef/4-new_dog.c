@@ -47,8 +47,8 @@ while (name[n] != '\0' && owner[o] != '\0')
 n++;/* get length of name*/
 o++;
 }
-newdog->name = malloc(sizeof(char) * (n + 1));
-newdog->owner = malloc(sizeof(char) * (o + 1));
+newdog->name = malloc((n + 1));
+newdog->owner = malloc((o + 1));
 if (newdog->name == NULL)
 {
 free(newdog->name);
