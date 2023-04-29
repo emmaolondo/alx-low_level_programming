@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	file_from = argv[1];
 	file_to = argv[2];
 
-	fd = open(file_from, O_RDWR);
+	fd = open(file_from, O_RDONLY);
 
 	if (fd == -1)
 	{
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		rfile = read(fd, buffer, 1024);
 		if (rfile == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: can't read from file %s\n", file_from);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			exit(98);
 		}
 		wfile = write(fd_copy, buffer, rfile);
