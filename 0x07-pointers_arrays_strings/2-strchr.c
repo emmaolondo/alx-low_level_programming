@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return (s + i);/* points the string from the character*/
+			return (s);/* points the string from the character*/
 		}
 	}
 	if (*s == c)
