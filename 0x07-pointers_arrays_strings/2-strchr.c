@@ -17,11 +17,10 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return (s);/* points the string from the character*/
+			return (s + i);/* points the string from the character*/
 		}
 	}
-	if (*s == c)
-		return (s);
-	else
+	if (c == '\0')
 		return (NULL);
+	return (NULL);
 }
