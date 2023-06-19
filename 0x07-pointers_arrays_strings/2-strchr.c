@@ -20,7 +20,8 @@ char *_strchr(char *s, char c)
 			return (s + i);/* points the string from the character*/
 		}
 	}
-	if (c == '\0')
-		return ('\0');
-	return (NULL);
+	if (*s == c)
+		return (s);
+	else
+		return (NULL);
 }
