@@ -12,13 +12,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *ptr;
 	char *val; /* copy of the value */
 
-	if (ht == NULL || value == NULL || key == NULL || *key == '\0')
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 	val = strdup(value);
 	if (val == NULL)
 		return (0);
-	/**ptr = malloc(sizeof(hash_node_t));
-	**/
+
 	key_idx = key_index((const unsigned char *)key, ht->size);
 	i = key_idx;
 	while (ht->array[i])
