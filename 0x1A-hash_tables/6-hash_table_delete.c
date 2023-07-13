@@ -9,6 +9,7 @@ void hash_table_delete(hash_table_t *ht)
 	unsigned long int idx;
 	hash_node_t *ptr, *tmp;
 	hash_table_t *head = ht;
+
 	for (idx = 0; idx < ht->size; idx++)
 	{
 		if (ht->array[idx] != NULL)
