@@ -12,7 +12,7 @@ void hash_table_delete(hash_table_t *ht)
 
 	idx = 0;
 	
-	while(idx < ht->size)
+	while (idx < ht->size)
 	{
 		if (ht->array[idx] != NULL)
 		{
